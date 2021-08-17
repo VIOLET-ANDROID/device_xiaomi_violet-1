@@ -21,9 +21,12 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common WaveOS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/wave/configs/common.mk)
+$(call inherit-product, vendor/syberia/common.mk)
 
-PRODUCT_NAME := wave_violet
+# FaceUnlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+PRODUCT_NAME := syberia_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
